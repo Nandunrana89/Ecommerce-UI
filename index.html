@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nandun's Shop</title>
+
+    <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+                font-family: sans-serif;
+            }
+
+            #header{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #4C4FAE;
+                padding: 0;
+                margin: 0;
+                color: white;
+                padding: 10px;
+            }
+
+            #items{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #cart > img {
+                width: 100px;
+            }
+
+            .item{
+                display: flex;
+                background-color: #FFFFFF;
+                width: 17%;
+                min-width: 17%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                }
+
+            .item > button{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background-color: #4D4EAF;
+                border: none;
+                color: #FFFFFF;
+                padding: 10px;
+                cursor: pointer;
+                bottom: 0px;
+                }
+
+            #cart-section{
+                background-color: #E4AF23;
+            }
+
+            #cart-header{
+                color: white;
+                text-align: center;
+                padding: 10px;
+                
+            }
+
+            #cart{
+                display: flex;
+            }
+
+            #cart > img{
+                margin: 20px;
+            }
+
+            #cart ol{
+                padding: 10px;
+            }
+
+            #cart img{
+                transform: translateY(2px);
+                padding-left: 10px;
+            }
+
+    </style>
+  </head>
+  <body>
+    <div id = "header">
+        <h1>Items</h1>
+    </div>
+    <div id = "items">
+        <div class="item">
+          <img src="images/phone-1.jpg" alt="">
+          <h3>Samsung Galaxy A03s</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img src="images/phone-2.jpg" alt="">
+          <h3>Huawei Nova Y70</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img src="images/phone-3.jpg" alt="">
+          <h3>Apple iPhone 11 64GB</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img src="images/phone-4.jpg" alt="">
+          <h3>Apple iPhone 13 Pro - 128GB</h3>
+          <button>Add to Cart</button>
+        </div>
+
+        <div class="item">
+          <img src="images/phone-5.jpg" alt="">
+          <h3>Apple iPhone SE 3 (2022) 64GB</h3>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div id = "cart-section">
+        <div id = "cart-header">
+          <h1>Cart</h1>
+        </div>
+        <div id="cart">
+          <img src="images/cart.png">
+          <div>
+            <ol>
+                <li> Samsung Galaxy A03s<img src = "images/close-button.png"  style = "width: 1rem;"/></li>
+            </ol>
+          </div>
+        </div>
+    </section>
+
+  </body>
+</html>
